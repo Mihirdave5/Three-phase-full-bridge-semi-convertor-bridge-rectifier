@@ -1,0 +1,26 @@
+Library:simscape.
+configuring three phase input:
+source 1:
+Peak amplitude:415VAC.
+Phase Deg:0
+Frequency:50Hz
+source 2:
+Peak amplitude:415VAC.
+Phase Deg:-120
+Frequency:50Hz
+source 3:
+Peak amplitude:415VAC.
+Phase Deg:+120
+Frequency:50Hz
+Total frequency of three pase input supply is 360(Deg) and each phase has 120(Deg) phase shifted from each other.
+Configuring Pulse generator:
+P.generator 1:
+period:0.020(20ms)
+Phase Delay:0.0015(1.5ms)
+P.generator 2:
+period:0.020(20ms)
+Phase Delay:0.0075(7.5ms)
+P.generator 3:
+period:0.020(20ms)
+Phase Delay:0.015(15ms)
+Pulse Generators are used to triger gate of SCR.
